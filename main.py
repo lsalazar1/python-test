@@ -1,10 +1,9 @@
 def isPalindrome(word):
 
-    modified_string="".join(char.lower() for char in word if char.isalnum())
-    if modified_string == modified_string[::-1]:
-        return True
-    return False
+    modified_word=word.lower()
+    return modified_word == modified_word[::-1]
+      
 
 
-word="Madam"
+word="pot"
 print(isPalindrome(word))
